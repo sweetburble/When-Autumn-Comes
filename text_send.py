@@ -6,7 +6,7 @@ url = "https://kapi.kakao.com/v2/api/talk/memo/default/send"
 
 # 사용자 토큰, 문서에 기재된 Authorization 정보 기재
 headers = {
-    "Authorization": "Bearer " + "G2UXTaGNBaJ1-RN6LZacyqm1ganryxa175WotsdBCisM0wAAAYOyRdRO"
+    "Authorization": "Bearer " + "K2cfeHPzsVIgythJze41hprhgYXpcORSzKbkLFb7CisM1AAAAYPHL6AG"
 }
 
 # template_object에 필수(Required)로 필수 요소 기재
@@ -14,7 +14,7 @@ data = {
     "template_object" : json.dumps({ "object_type" : "text",
                                     "text" : "Hello, world!",
                                     "link" : {
-                                        "web_url" : "www.naver.com"
+                                        "web_url" : "https://m.youtube.com"
                                     }
     })
 }
