@@ -1,2 +1,10 @@
-Lofi 코딩, Youtube, https://i.ytimg.com/vi/Xc1Le3CSdrM/default.jpg, https://www.youtube.com/watch?v=Xc1Le3CSdrM
-yanu_, Youtube, https://i.ytimg.com/vi/cbuZfY2S2UQ/default.jpg, https://m.youtube.com/
+Lofi 코딩, https://i.ytimg.com/vi/Xc1Le3CSdrM/mqdefault.jpg, https://www.youtube.com/watch?v=Xc1Le3CSdrM
+yanu_, https://i.ytimg.com/vi/cbuZfY2S2UQ/mqdefault.jpg, https://www.youtube.com/watch?v=cbuZfY2S2UQ
+인프런 inflearn, https://i.ytimg.com/vi/qMwzWk81tVM/mqdefault.jpg, https://www.youtube.com/watch?v=qMwzWk81tVM
+yellow mixtape, https://i.ytimg.com/vi/1yylwX-tTh4/mqdefault.jpg, https://www.youtube.com/watch?v=1yylwX-tTh4
+Mood Rainbow, https://i.ytimg.com/vi/nxKfi-6EtmY/mqdefault.jpg, https://www.youtube.com/watch?v=nxKfi-6EtmY
+노마드 코더, https://i.ytimg.com/vi/Jm5v-dZnYCs/mqdefault.jpg, https://www.youtube.com/watch?v=Jm5v-dZnYCs
+The AMP Channel, https://i.ytimg.com/vi/f02mOEt11OQ/mqdefault.jpg, https://www.youtube.com/watch?v=f02mOEt11OQ
+덕후 뮤직 Music Nerds, https://i.ytimg.com/vi/iaXReFOr9YY/mqdefault.jpg, https://www.youtube.com/watch?v=iaXReFOr9YY
+민플리PLAYLIST, https://i.ytimg.com/vi/jJTKX1O5pOw/mqdefault.jpg, https://www.youtube.com/watch?v=jJTKX1O5pOw
+눈에띠네, https://i.ytimg.com/vi/PE1_hAImGu4/mqdefault.jpg, https://www.youtube.com/watch?v=PE1_hAImGu4

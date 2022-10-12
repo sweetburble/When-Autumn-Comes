@@ -5,49 +5,18 @@ def create_template(command):
     if ("코딩" in command):
         with open('coding_list.txt', 'r') as f:
             list = f.readlines()
-            first = list[0].split(', ')
-            second = list[1].split(', ')
-        template = {
-        "object_type": "list",
-        "header_title": "코딩할 때 듣기 좋은 노래",
-        "header_link": {
-            "web_url": "https://url.kr/fgj7nm",
-            "mobile_web_url": "https://m.youtube.com"
-            },
-        "contents": [
-            {
-                    "title": first[0],
-                    "description": first[1],
-                    "image_url": first[2],
-                    "image_width": 50, "image_height": 50,
-                    "link": {
-                        "web_url": first[3],
-                        "mobile_web_url": first[3]
-                    }
-                },
-            {
-                    "title": second[0],
-                    "description": second[1],
-                    "image_url": second[2],
-                    "image_width": 50, "image_height": 50,
-                    "link": {
-                        "web_url": second[3],
-                        "mobile_web_url": second[3]
-                    }
-                }
-            ],
-        "buttons": [
-            {
-                    "title": "검색 결과 더보기",
-                    "link": {
-                        "web_url": "https://url.kr/fgj7nm",
-                        "mobile_web_url": "https://m.youtube.com"
-                    }
-                }
-            ]
-        }
+            first = list[a].split(', ')
+            second = list[b].split(', ')
 
-        return template
+        return first, second, "코딩할 때 집중하기 좋은 노래", "https://url.kr/fgj7nm"
+    
+    elif ("게임" in command):
+        with open('game_list.txt', 'r') as f:
+            list = f.readlines()
+            first = list[a].split(', ')
+            second = list[b].split(', ')
+
+        return first, second, "게임할 때 듣기 좋은 신나는 노래", "https://url.kr/px9i1h"
 
 
 
@@ -61,51 +30,52 @@ def do(speech):
 
     # 사용자 토큰, 문서에 기재된 Authorization 정보 기재, access token은 약 6시간 유효하다.
     headers = {
-        "Authorization": "Bearer " + "K2cfeHPzsVIgythJze41hprhgYXpcORSzKbkLFb7CisM1AAAAYPHL6AG"
+        "Authorization": "Bearer " + "rpT3FMq5LWRUBkAh-Q0qijWBirxtCAyuelPuui00Cj10lwAAAYPMPf_H"
     }
 
-    # template_object에 필수(Required)로 필수 요소 기재
-    # template = {
-    #     "object_type": "list",
-    #     "header_title": "초밥 사진",
-    #     "header_link": {
-    #         "web_url": "www.naver.com",
-    #         "mobile_web_url": "www.naver.com"
-    #         },
-    #     "contents": [
-    #         {
-    #                 "title": "1. 광어초밥",
-    #                 "description": "광어는 맛있다",
-    #                 "image_url": "https://i.ytimg.com/vi/Xc1Le3CSdrM/default.jpg",
-    #                 "image_width": 50, "image_height": 50,
-    #                 "link": {
-    #                     "web_url": "www.naver.com",
-    #                     "mobile_web_url": "www.naver.com"
-    #                 }
-    #             },
-    #         {
-    #                 "title": "2. 참치초밥",
-    #                 "description": "참치는 맛있다",
-    #                 "image_url": "https://search2.kakaocdn.net/argon/0x200_85_hr/IjIToH1S7J1",
-    #                 "image_width": 50, "image_height": 50,
-    #                 "link": {
-    #                     "web_url": "www.naver.com",
-    #                     "mobile_web_url": "www.naver.com"
-    #                 }
-    #             }
-    #         ],
-    #     "buttons": [
-    #         {
-    #                 "title": "웹으로 이동",
-    #                 "link": {
-    #                     "web_url": "www.naver.com",
-    #                     "mobile_web_url": "www.naver.com"
-    #                 }
-    #             }
-    #         ]
-    #     }
+    # 음성인식 결과를 create_template의 매개 변수로 제공하고, 여러가지 값들을 리턴받는다.
+    first, second, header, default_link = create_template(speech)
 
-    template = create_template("코딩입니다.")
+    # template_object에 필수(Required)로 되어있는 요소를 create_template 함수에서 받은 값으로 기재
+    template = {
+        "object_type": "list",
+        "header_title": header,
+        "header_link": {
+            "web_url": default_link,
+            "mobile_web_url": default_link
+            },
+        "contents": [
+            {
+                    "title": first[0],
+                    "description": "Youtube",
+                    "image_url": first[1],
+                    "image_width": 50, "image_height": 50,
+                    "link": {
+                        "web_url": first[2],
+                        "mobile_web_url": first[2]
+                    }
+                },
+            {
+                    "title": second[0],
+                    "description": "Youtube",
+                    "image_url": second[1],
+                    "image_width": 50, "image_height": 50,
+                    "link": {
+                        "web_url": second[2],
+                        "mobile_web_url": second[2]
+                    }
+                }
+            ],
+        "buttons": [
+            {
+                    "title": "검색 결과 더보기",
+                    "link": {
+                        "web_url": default_link,
+                        "mobile_web_url": default_link
+                    }
+                }
+            ]
+        }
 
     # template 변수를 json string 형식으로 변경
     data = {
@@ -123,4 +93,4 @@ def do(speech):
             print(f"메시지를 성공적으로 보내지 못했습니다. 오류메시지 : {str(response.json())}")
 
 if (__name__ == "__main__"):
-    do("화이팅")
+    do("코딩할때 듣기 좋은 노래")
