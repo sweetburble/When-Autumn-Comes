@@ -1,0 +1,10 @@
+song song, https://i.ytimg.com/vi/Ql6iiHDOZmQ/mqdefault.jpg, https://www.youtube.com/watch?v=Ql6iiHDOZmQ
+조거북, https://i.ytimg.com/vi/d3fAkvgvm1o/mqdefault.jpg, https://www.youtube.com/watch?v=d3fAkvgvm1o
+눈에띠네, https://i.ytimg.com/vi/rluQa9r7MGA/mqdefault.jpg, https://www.youtube.com/watch?v=rluQa9r7MGA
+나의플레이리스트 NAPLY, https://i.ytimg.com/vi/Axl1IO7s4Ho/mqdefault.jpg, https://www.youtube.com/watch?v=Axl1IO7s4Ho
+플리슨PListen, https://i.ytimg.com/vi/zv4rS5ZQbKE/mqdefault.jpg, https://www.youtube.com/watch?v=zv4rS5ZQbKE
+LAST 라플리, https://i.ytimg.com/vi/7ydtkvjjxSc/mqdefault.jpg, https://www.youtube.com/watch?v=7ydtkvjjxSc
+직장인지유, https://i.ytimg.com/vi/pMgpiiUGTDU/mqdefault.jpg, https://www.youtube.com/watch?v=pMgpiiUGTDU
+원플리 Oneplaylist, https://i.ytimg.com/vi/HwIcBr2H5ro/mqdefault.jpg, https://www.youtube.com/watch?v=HwIcBr2H5ro
+essential;, https://i.ytimg.com/vi/obkZl2mYnpI/mqdefault.jpg, https://www.youtube.com/watch?v=obkZl2mYnpI
+찐막 JJINMAK, https://i.ytimg.com/vi/6q4DSKFn_k8/mqdefault.jpg, https://www.youtube.com/watch?v=6q4DSKFn_k8
