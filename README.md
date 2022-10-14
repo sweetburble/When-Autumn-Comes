@@ -52,18 +52,17 @@ pip install ..\Downloads\PyAudio-0.2.11-cp39-cp39m-win_amd64.whl
 ### 4. 수고하셨습니다. 이제 recording_cloud.py를 실행하여 여러분의 감정을 솔직하게 말씀해주시고 그에 맞는 플레이리스트를 추천받아 보세요!  
 <br/><br/><br/>
 
-## 🚒 발생할 수 있는 에러와 해결법<br/><br/>
-
+## 🚒 발생할 수 있는 에러와 해결법<br/>
 <img width="626" alt="access 토큰 만료" src="https://user-images.githubusercontent.com/79733289/195757810-748505f9-70cb-4463-a034-fabf34b04268.png">
-recording_cloud.py를 실행했을 때 발생하는 에러로 카카오톡의 access_token이 만료된 상황입니다.
-refresh_token.py를 실행시켜서 다시 access_token을 받아주세요.
+recording_cloud.py를 실행했을 때 발생하는 에러로 카카오톡의 **access_token이 만료**된 상황입니다.
+**refresh_token.py를 실행**시켜서 다시 access_token을 받아주세요.
 <br/><br/><br/>
 <img width="506" alt="리프레쉬 토큰 오류" src="https://user-images.githubusercontent.com/79733289/195760417-c4705578-72ea-44af-9d4c-de6ada1083b0.png">
 refresh_token.py를 실행했을 때 발생하는 에러로<br/>
-"시작하기에 앞서" 챕터로 돌아가 2번 항목을 다시 수행하여 새 인증 코드와 새 access_token을 받아주세요.
+"시작하기에 앞서" 챕터로 돌아가 2번 항목을 다시 수행하여 **새 인증 코드와 새 access_token**을 받아주세요.
 <br/><br/><br/>
 <img width="429" alt="키워드와 다른 명령을 했을때" src="https://user-images.githubusercontent.com/79733289/195760888-532fed15-4140-4ce4-91e4-0473018a1777.png">
-WAC는 사용자의 노래 취향을 올바르게 ~~저격~~할 수 있도록 키워드가 한정되어 있습니다.<br/>
+WAC는 사용자의 노래 취향을 **올바르게 저격**할 수 있도록 키워드가 한정되어 있습니다.<br/>
 정해진 키워드가 들어간 문장을 말해주시면 감사하겠습니다.
 
 <br/><br/><br/>
