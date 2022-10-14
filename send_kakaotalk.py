@@ -2,6 +2,7 @@ def create_template(command):
     import random
     a, b = random.sample([0,1,2,3,4,5,6,7,8,9], 2) # 매번 다른 두 숫자를 고른다.
 
+    # recoring_cloud.py에서 번역된 텍스트를 받아 키워드를 찾아내고, 그에 맞는 노래 리스트 파일을 읽고 다시 do()함수에 리턴한다.
     if ("코딩" in command):
         with open('recommend_list/coding_list.txt', 'r') as f:
             list = f.readlines()

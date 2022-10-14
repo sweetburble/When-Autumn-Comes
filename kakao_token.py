@@ -4,7 +4,7 @@ import json
 # 사용자가 얻은 REST API Key와 인증 코드를 텍스트 파일에 넣기만 하면, 읽어와서 저장합니다.
 with open('Restapi+code.txt', 'r') as f:
             lines = f.readlines()
-            lines = list(map(lambda s: s.strip(), lines))
+            lines = list(map(lambda s: s.strip(), lines)) # 텍스트 파일에는 개행문자가 포함되기 때문에
             API_KEY = lines[1]
             Authentication_Code = lines[4]
 

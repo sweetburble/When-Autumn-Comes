@@ -2,12 +2,15 @@ import pyaudio
 import wave
 import io
 import os
+
 # Imports the Google Cloud client library
 from google.cloud import speech
 
+# send_kakaotalk.py를 import한 뒤, 음성 번역한 값을 do()의 인수로 넘겨준다.
 import send_kakaotalk
 
 def recording():
+    # 녹음파일의 설정을 정하는 과정이다.
     FORMAT = pyaudio.paInt16
     CHANNELS = 1
     RATE = 16000
@@ -17,19 +20,19 @@ def recording():
 
     audio = pyaudio.PyAudio()
 
-# 목소리 녹음 시작
+    # 목소리 녹음 시작
     stream = audio.open(format=FORMAT, channels=CHANNELS,
                 rate=RATE, input=True,
                 frames_per_buffer=CHUNK)
     print("오늘 어때요??")
     frames = []
 
-    for i in range(0, int(RATE / CHUNK * RECORD_SECONDS)):
+    for i in range(0, int(RATE / CHUNK * RECORD_SECONDS)): # 약 5초간 음성을 인식한다.
         data = stream.read(CHUNK)
         frames.append(data)
-    print ("finished recording")
+    print ("아하! 그렇군요!")
 
-# stop Recording
+    # 목소리 녹음 종료
     stream.stop_stream()
     stream.close()
     audio.terminate()
@@ -41,7 +44,7 @@ def recording():
     waveFile.writeframes(b''.join(frames))
     waveFile.close()
 
-    run_quickstart()
+    run_quickstart() # run_quickstart()는 음성파일을 Google의 서비스가 듣고 텍스트로 번역한다.
 
 def run_quickstart():
     client = speech.SpeechClient()
@@ -55,15 +58,15 @@ def run_quickstart():
 
     config = speech.RecognitionConfig(
         encoding=speech.RecognitionConfig.AudioEncoding.LINEAR16,
-        sample_rate_hertz=16000,
-        language_code="ko-KR",
+        sample_rate_hertz=16000, # sampling rate는 16000이다.
+        language_code="ko-KR", # ko-KR로 해야 음성이 한국말인 것을 인지하고 번역한다.
     )
 
     response = client.recognize(config=config, audio=audio)
 
     for result in response.results:
-        print(f"Transcript : {result.alternatives[0].transcript}")
-        send_kakaotalk.do(result.alternatives[0].transcript)
+        print(f"이렇게 말씀하신거 맞죠?\n{result.alternatives[0].transcript}")
+        send_kakaotalk.do(result.alternatives[0].transcript) # send_kakatalk의 do()에게 번역된 텍스트를 주었다.
 
 
 if __name__ == "__main__":
