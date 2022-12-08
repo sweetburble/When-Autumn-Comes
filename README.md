@@ -9,6 +9,10 @@
 <br/>구글 Cloud의 Speech-to-Text API를 이용해서 그것을 텍스트로 번역하고   
 사용자가 듣고 싶어할만한 노래를 카카오의 OpenAPI를 이용한 "나와의 채팅"으로 카톡 메시지를 보내는 프로젝트입니다.  
 <br/><br/>
+## ☝️ 실행 예시
+https://user-images.githubusercontent.com/79733289/206367600-ce1c0392-76cd-4d8a-8c3b-30bc7b0e365c.mp4
+
+<br/><br/>
 ## ✋ 시작하기에 앞서
 WAC는 구글 Cloud와 카카오의 API를 사용했기 때문에 이 프로젝트를 사용하기 위해서는 이 둘의 서비스 인증 키를 받아야 합니다.  
 ### 0. 당연히 Github에 있는 모든 프로젝트 파일들을 다운 받아 주세요.
@@ -86,8 +90,8 @@ WAC는 사용자의 노래 취향을 올바르게 저격할 수 있도록 키워
 <img width="285" alt="우울" src="https://user-images.githubusercontent.com/79733289/195763624-09ef08fb-346b-4235-ab97-72fdc847aff3.png"><img width="282" alt="추천" src="https://user-images.githubusercontent.com/79733289/195763654-815be928-a8d3-444d-bf81-226e631c3e85.png">
 <br/><br/>
 ### 내 마음을 설레게 할 노래부터 공부에 집중할 수 있는 노래까지..! 
-### 올해에는 WAC이랑 함께 즐겁게 보내시길 바랍니다.<br/><br/>
-## 감사합니다 👋
+### 올해에는 WAC이랑 함께 즐겁게 보내시길 바랍니다.<br/>
+### 감사합니다! 👋
 <br/><br/><br/>
 ## Reference 👍
 [카카오 공식문서](https://developers.kakao.com/) - 카카오 메시지 API 및 튜토리얼, 오류 코드 제공
